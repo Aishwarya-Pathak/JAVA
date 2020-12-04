@@ -1,0 +1,61 @@
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class HelloWorld {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		// System.out.println("Hello World!");
+
+// Increment & Decrement 		
+//		int a = 5;
+//		System.out.println(a); 	 // output = 5       			   
+//		System.out.println(++a); // output = 6
+//		System.out.println(a++); // output = 6
+//		System.out.println(a);   // output = 7
+
+// Simple Interest		
+//		double result;
+//		int principal = 18000;
+//		double rate = 0.06;
+//		int time = 3;
+//		
+//		result = principal*rate*time;
+//		System.out.println(result);
+
+//Input from user
+//		Scanner obj = new Scanner(System.in);
+//		System.out.println("Enter name");
+//		
+//		String name = obj.nextLine();
+//		System.out.println("Name is " + name);
+
+// even or odd
+//		Scanner sobj = new Scanner(System.in);
+//		System.out.println("Enter number");
+//		
+//		int a = sobj.nextInt();
+//		if(a%2 == 0) {
+//			System.out.println("Number is even");
+//		}
+//		else {
+//			System.out.println("Number is odd");
+//		}
+
+//Buffered reader class way to take user input
+// We had to import IOException, BufferedReader, InputstreamReader from java.io		
+//		BufferedReader obj = new BufferedReader(new InputStreamReader(System.in));
+// We had to fix this error here occurring by adding throws Exception thing up there
+//		String name = obj.readLine();
+//		System.out.println(name);
+//				
+
+// Console way to take user input
+		String name = System.console().readLine();
+		System.out.println(name);
+
+	}
+
+}
