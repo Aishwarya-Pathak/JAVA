@@ -1,0 +1,11 @@
+class Test {
+	public static void main(String[] args) {
+		System.out.println("Main Method String Array");
+	}
+
+	public static void main(int[] args) {
+		System.out.println("Main Method int Array");
+	}
+}
+
+// why isnt that int one called here? >>> coz JVM me bs aise likha h ki String wala hi main method call kro
