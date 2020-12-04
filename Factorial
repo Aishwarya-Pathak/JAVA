@@ -1,0 +1,45 @@
+package package3;
+
+import java.util.Scanner;
+
+public class factorial {
+	
+	public static void main(String[] args) {
+		//System.out.println(test());
+		
+		factorial obj = new factorial();
+		obj.test1();
+	}
+
+	public static int test() {
+		
+		Scanner sobj = new Scanner(System.in);
+		System.out.println("Enter number");
+		
+		int a = sobj.nextInt();
+		int fact = 1;
+		for(int i=1;i<=a;i++) {
+			fact = i*fact;
+		}
+		return fact;
+	}
+	
+	public void test1() {
+		Scanner sobj = new Scanner(System.in);
+		System.out.println("Enter first number: ");
+		int a = sobj.nextInt();
+		System.out.println("Enter second number: ");
+		int b = sobj.nextInt();
+		System.out.println("Enter third number: ");
+		int c = sobj.nextInt();
+		
+		if(a>b && a>c) {
+			System.out.println(a+ "is the highest number");
+		}else if(b>a && b>c) {
+			System.out.println(b+ "is the highest number");
+		}else {
+			System.out.println(c+ "is the highest number");
+		}
+		
+	}
+}
