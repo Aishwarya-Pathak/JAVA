@@ -1,0 +1,17 @@
+package package4;
+
+import package3.Class3;
+
+public class Class4 extends Class3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Class4 myobj4 = new Class4();
+		myobj4.b = 7;
+		myobj4.c = 10;
+//		
+//		myobj4.
+		
+	}
+
+}
