@@ -1,0 +1,16 @@
+package package3;
+
+public class AcessModiClass extends Class3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		AcessModiClass myobj1 = new AcessModiClass();
+//		myobj1.a = 1;
+//		myobj1.b = 3;
+//		myobj1.c = 0;
+		
+//		myobj1.
+	}
+
+}
