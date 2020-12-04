@@ -1,0 +1,58 @@
+package package3;
+
+/**
+ * @author aishwarya.pathak
+ *This class will have the methods with all the access modifiers so that we can see the way it works
+ *Public, Private, Protected, Default
+ *Public - accessible everywhere
+ *Private - accessible only in this class. Highly recommended for variable so that they can't be modified causing issues in 
+ *current program 
+ *Default - accessible only in this package
+ *Protected - accessible in this package and in the child class in another package. We need to use the child class object (reference)
+ *to access this protected method/variable
+ */
+public class Class3 {
+
+// 	ACCESS MODIFIERS ON VARIABLES	
+	// Declaring a default variable here. We do not need to write default to give this access modifier. This will be accessible in
+	// package only. 
+	// So this variable a will be accessible to AcessModiClass and not to Class4
+	int a = 5;
+	
+	// Declaring private variable here. This will not be accessible outside this Class3
+	// this variable name will be accessible to only Class3 and not to AcessModiClass
+	private String name = "Rachel";
+	
+	// Declaring public variable here. This will be accessible from anywhere and everywhere
+	// this variable b will be accessible to AcessModiClass and Class4
+	public int b= 9;
+	
+	// Declaring protected variable here. This will be accessible in this package and in the child class in another package
+	// this variable will be accessible to AcessModiClass and child class extending Class3 in package4
+	protected int c = 10;
+
+// 	ACCESS MODIFIERS ON METHODS
+	// Declaring public method
+	// This method will be accessible everywhere i.e AcessModiClass and Class4
+	public void test1() {
+		System.out.println("public class in class3");
+	}
+	
+	// Declaring private method
+	// This method will be accessible only in this class i.e Class3
+	private void test2() {
+		System.out.println("private class in class3");
+	}
+	
+	// Declaring protected method
+	// This method will be accessible in AcessModiClass and Class4
+	protected void test3() {
+		System.out.println("protected class in class3");
+	}
+	
+	// Declaring default method
+	// This will be accessible to AcessModiClass
+	void test4() {
+		System.out.println("default class in class3");
+	}
+}
