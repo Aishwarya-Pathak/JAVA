@@ -5,7 +5,7 @@ public abstract class Abs {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		Abs obj = new Abs();
+//		Abs obj = new Abs();   >>> had got error here that cannot instantiate
 		
 	}
 	
