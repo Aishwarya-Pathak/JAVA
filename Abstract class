@@ -1,0 +1,16 @@
+// we cannot create object of abstract class
+
+
+public abstract class Abs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Abs obj = new Abs();
+		
+	}
+	
+	public void user() {
+		System.out.println("Hi");
+	}
+
+}
