@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+
+/**
+ * @author aishwarya.pathak
+ *Fibonnaci series is a series in which the sum of the preceding numbers is the next number
+ *we will declare 2 integers already as we need to start somewhere
+ *we will then take input from user say which number's series does he want
+ *then we will add a and b and then store it in c
+ *after this we are printing the value we got in c
+ *we are then updating the values of a and b using the swapping method
+ *the value in a will be updated to the value in b and value in b will get updated to value in c as we have to add
+ *the next two values for the next number in the series
+ */
+public class fibonacci {
+
+	int a=0, b=1, c;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	fibonacci obj = new fibonacci();
+	obj.fibonacci();		
+	}
+	
+	public void fibonacci() {
+
+		Scanner sobj = new Scanner(System.in);
+		System.out.println("Enter number");
+		
+
+		int num = sobj.nextInt();
+		// priting the values of a and b as they are the starting values in the series which we have already declared
+		System.out.println(a);
+		System.out.println(b);		
+		
+		for(int i=1;i<=num;i++) {
+			c=a+b;
+			System.out.println(c);
+			a=b;
+			b=c;
+		}
+	}
+}
