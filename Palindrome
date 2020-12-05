@@ -1,0 +1,35 @@
+
+
+
+/**
+ * @author aishwarya.pathak
+ * we took 3 variables >> remainder, temp (to store the number) and sum (new/reversed value store krne k liye)=0
+ * we have to 1st store the number in temp variable
+ * then use while loop for number>0
+ * in while loop we did mod of number against 10 and got the remainder >> we are doing this so that we can traverse
+ * through the number
+ * then we multiplied sum by 10 and added this to remainder
+ * we now divide number by 10 so that we traverse more in the number
+ * after a point the number wont be greater than 0 and so the loop will stop
+ * then we compare the value in sum and temp variables, if they are same it is palindrome otherwise not a palindrome 
+ */
+public class Palindrome {
+	 
+		 public static void main(String args[]){ 
+			 
+		  int reminder ,sum=0,temp;    
+		  int n=454;//It is the number variable to be checked for palindrome  
+		  
+		  temp=n;  
+		  
+		  while(n>0){    
+		   reminder=n%10;  //getting remainder  
+		   sum=(sum*10)+reminder;    
+		   n=n/10;    
+		  }    
+		  if(temp==sum)    
+		   System.out.println("palindrome number ");    
+		  else    
+		   System.out.println("not palindrome");    
+		}  
+		}  
