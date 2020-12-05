@@ -1,0 +1,47 @@
+
+
+import java.util.Scanner;
+
+/**
+ * @author aishwarya.pathak
+ * A prime number is a number which is divisible by itself and 1
+ * To check whether a number is prime or not, we will have to check whether it has any other factors or not
+ * so we will say that we have to check whether the mentioned number is completely divisible by any other number other
+ * than itself and 1
+ * So, we will take a for loop starting from 2 till num-1 coz we don't want to check above mentioned thing with 1 and the
+ * number itself.
+ * in the loop we will check the remainder i.e. use the mod operator against 2 
+ * if this the num%2==0 > we are incrementing a counter for example temp which was 0 already
+ * now in the next if else loop, we will decide whether the number is a prime number or not based on this temp
+ * if it is >0 >>> it is not a prime otherwise it is a prime number
+ */
+
+public class PrimeNumber {
+	int temp =0;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		PrimeNumber obj = new PrimeNumber();
+		obj.PrimeNum();
+	}
+	
+	public void PrimeNum() {
+		Scanner sobj = new Scanner(System.in);
+		System.out.println("Enter number");
+		
+		int a = sobj.nextInt();
+		
+		for (int i=2; i<=(a-1); i++) {
+			if(a%2==0) {
+				temp = temp+1;
+			}
+		}
+		if (temp>0) {
+			System.out.println("not prime");
+		}else {
+			System.out.println("prime");
+		}
+			
+
+}
+}
