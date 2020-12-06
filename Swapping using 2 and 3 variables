@@ -1,0 +1,48 @@
+
+/**
+ * @author aishwarya.pathak
+ * we will take 2 variables a and b say. we will add them first
+ * when we add, here it becomes 24
+ * for b, we said a-b so it will become 24-8 >> 16 is in b
+ * for a again, we need to have 8 so now b=16 and a = 24 so a=24-16 i.e. 8
+ */
+
+public class Swapping {
+
+	private int a=16;
+	private int b=8;
+	
+	private int x=4, y=7, z=8;
+	
+	private int p=7, q=3, r;
+	public static void main(String[] args) {
+		Swapping obj = new Swapping();
+//		obj.Swap();
+//		obj.Swapthree();
+		obj.Swapt();
+	}
+	
+	public void Swap() {
+		System.out.println("Before Swapping the numbers, a was " + a + " and b was " + b);
+		a = a+b;
+		b= a-b;
+		a= a-b;
+		System.out.println("After Swapping the numbers, a is "+ a + " and b is "+ b);
+	}
+	
+	public void Swapthree() {
+		System.out.println("Before Swapping the numbers, x was " + x + " , y was " + y + " and z was " + z);
+		x = x+y+z;
+		y = x-(y+z);
+		z = (x-y)-z;
+		x = x-(y+z);
+		System.out.println("After Swapping the numbers, x is " + x + " , y is " + y + " and z is " + z);
+	}
+	
+	public void Swapt() {
+		r =p;
+		p=q;
+		q =r;
+		System.out.println("p: "+ p  + " q: " + q);
+	}
+}
