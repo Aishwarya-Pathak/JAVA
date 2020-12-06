@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class TableofaNumber {
+	
+	private int c, i=1;
+	public static void main(String[] args) {
+		TableofaNumber obj1 = new TableofaNumber();
+		obj1.table();
+	}
+	
+	
+	public void table() {
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter number");
+		
+		int a = obj.nextInt();
+			
+		for (int i=1; i<=10; i++) {
+			c = a*i;
+			System.out.println(c);
+		}
+	}
+	
+}
